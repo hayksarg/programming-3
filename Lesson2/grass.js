@@ -1,5 +1,4 @@
 class Grass extends KendaniEak {
-
     bazmanal(){
         this.multiply++;
         this.direction = random(this.yntrelVandak(0));

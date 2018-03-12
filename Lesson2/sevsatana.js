@@ -3,9 +3,9 @@ class SevSatana {
         this.x = x;
         this.y = y;
         this.index = index;
-        this.energy = Math.round(Math.random() * 32);
-        this.speed = 96;
-        this.multiply = Math.round(Math.random() * 32);
+        this.energy = Math.round(Math.random() * 24);
+        this.speed = 36;
+        this.multiply = Math.round(Math.random() * 24);
         matrix[this.y][this.x] = this.index;
         this.directions = [
             [this.x - 1, this.y - 1],
@@ -64,7 +64,7 @@ class SevSatana {
             matrix[this.y][this.x] = 0;
             this.x = vand[0]; this.y = vand[1];
             matrix[this.y][this.x] = 3;
-            for (var i in xotakerArr) {
+            for (var i in gishatichArr) {
                 if (gishatichArr[i].x == this.x && gishatichArr[i].y == this.y) {
                     gishatichArr.splice(i, 1);
                 }
